@@ -1,46 +1,36 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="google" value="notranslate" /> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>MEMSECO</title>
-
-<style>
-html, body {
-    margin: 0px;
-    padding: 0px;
-    font-family:Verdana, Geneva, sans-serif;
-    background-color: #1a1a1a;
-    text-align: center;
-    width: 100%;
-    height: 100%; 
-    overflow: hidden;
-}
-
-.video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* یا object-fit: contain; بسته به نیاز */
-}
-</style>
-
-<link href="remembrance_embed.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMSECO</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+			background: white;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-<div class="video-container">
-    <iframe class="tscplayer_inline" id="embeddedSmartPlayerInstance" src="remembrance_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen playsinline></iframe>
-</div>
+    <div class="video-container">
+        <video src="remembrance.mp4" controls autoplay></video>
+    </div>
 </body>
 </html>
